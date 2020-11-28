@@ -6,16 +6,19 @@ const BandList = () => {
 
     const crearRows = ()=> {
         return (
-            <tr>
-                <td>
-                    <button className="btn btn-primary">+1</button>
-                </td>
-                <td>
-                    <input className="form-control"/>
-                </td>
-                <td><h3> 15 </h3></td>
-                <td><button className="btn btn-danger">Borrar</button></td>
-            </tr>
+
+            bands.map( band => {
+                <tr>
+                    <td>
+                        <button className="btn btn-primary">+1</button>
+                    </td>
+                    <td>
+                        <input className="form-control"/>
+                    </td>
+                    <td><h3> 15 </h3></td>
+                    <td><button className="btn btn-danger">Borrar</button></td>
+                </tr>
+            })
         )
     }
 
